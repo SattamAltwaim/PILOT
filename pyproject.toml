@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pilot-optimizer"
+version = "0.1.0.post3"
+description = "PILOT: Policy-Informed Learned Optimization for Adaptive Deep Network Training"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    {name = "Sattam Altuuaim", email = "satttam.tuuaim@kaust.edu.sa"},
+    {name = "Lama Ayash", email = "lama.ayash@kaust.edu.sa"},
+    {name = "Muhammad Mubashar", email = "muhammad.mubashar@strath.ac.uk"},
+    {name = "Naeemullah Khan", email = "naeemullah.khan@kaust.edu.sa"},
+]
+keywords = ["optimizer", "deep-learning", "pytorch", "meta-learning", "adaptive-optimization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://sattamaltwaim.github.io/PILOT/"
+Repository = "https://github.com/SattamAltwaim/PILOT"
+Paper = "https://arxiv.org/abs/2605.24570"
+
+[tool.setuptools.packages.find]
+include = ["pilot*"]
