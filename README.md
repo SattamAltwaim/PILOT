@@ -20,6 +20,8 @@
 
 ---
 
+
+
 **PILOT** is an online adaptive optimizer that adjusts its update behavior during training. Instead of applying a fixed update rule from the first step to the last, PILOT reads a gradient-direction agreement signal and reshapes the update through a lightweight learned policy — no offline search, no meta-training, no second-order estimation.
 
 ## Installation
